@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đền Trạng Trình Nguyễn Bỉnh Khiêm</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fdfdfd;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: linear-gradient(to right, #800000, #a94442);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      position: relative;
+    }
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #ffd700;
+      margin-bottom: 10px;
+    }
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: linear-gradient(to right, #550000, #333);
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 14px 18px;
+      display: block;
+      font-weight: bold;
+      transition: background 0.3s, transform 0.3s;
+    }
+    nav a:hover {
+      background-color: #880000;
+      transform: translateY(-2px);
+    }
+    .section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 50px 20px;
+      background: white;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      margin-top: 40px;
+      border-radius: 12px;
+      animation: fadeIn 1.2s ease both;
+    }
+    .section h2 {
+      color: darkred;
+      border-bottom: 3px solid #ddd;
+      padding-bottom: 10px;
+      font-size: 28px;
+    }
+    .section p {
+      font-size: 18px;
+      line-height: 1.8;
+    }
+    .images {
+      text-align: center;
+      margin-top: 25px;
+    }
+    .images img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      transition: transform 0.4s ease;
+    }
+    .images img:hover {
+      transform: scale(1.03);
+    }
+    .images figcaption {
+      font-style: italic;
+      color: #555;
+      margin-top: 8px;
+    }
+    iframe {
+      width: 100%;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+    footer {
+      background: linear-gradient(to right, #2c2c2c, #000);
+      color: #ccc;
+      padding: 40px 20px;
+      font-size: 16px;
+    }
+    footer .footer-content {
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+    footer h3 {
+      color: #f2b03d;
+      border-bottom: 1px solid #f2b03d;
+      padding-bottom: 8px;
+      margin-bottom: 12px;
+    }
+    footer p, footer a {
+      color: #ccc;
+      text-decoration: none;
+      line-height: 1.6;
+    }
+    footer a:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+    .back-to-top {
+      text-align: center;
+      margin-top: 30px;
+    }
+    .back-to-top a {
+      background: #f2b03d;
+      padding: 10px 20px;
+      border-radius: 8px;
+      color: #000;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .back-to-top a:hover {
+      background: #ffa500;
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+      nav a {
+        padding: 12px;
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Đền NBK</div>
+    <h1>Đền Trạng Trình Nguyễn Bỉnh Khiêm</h1>
+  </header>
+  <nav>
+    <a href="#gioithieu">Giới thiệu</a>
+    <a href="#lichsu">Lịch sử</a>
+    <a href="#kientruc">Kiến trúc</a>
+    <a href="#lehoi">Lễ hội</a>
+  </nav>
+
+  <div class="section" id="gioithieu">
+  <h2>Giới thiệu</h2>
+  <p>Đền Trạng Trình tọa lạc tại xã Lý Học, huyện Vĩnh Bảo, Hải Phòng – là quê hương của danh nhân Nguyễn Bỉnh Khiêm. Đây là quần thể văn hóa lịch sử mang đậm dấu ấn tri thức và tâm linh của người Việt, được Nhà nước công nhận là Di tích Quốc gia đặc biệt. Không gian nơi đây mang vẻ thanh tịnh, với cây cối xanh mát, các công trình kiến trúc cổ kính và hương khói linh thiêng quanh năm.</p>
+  <div class="images">
+    <figure>
+      <img src="https://mapio.net/images-p/43108883.jpg" alt="Giới thiệu Đền Trạng Trình">
+      <figcaption>Toàn cảnh Đền Trạng Trình nhìn từ phía trước</figcaption>
+    </figure>
+  </div>
+</div>
+
+  <div class="section" id="lichsu">
+    <h2>Lịch sử</h2>
+    <p>Đền được xây dựng để tưởng nhớ Trạng Trình – người được tôn vinh là nhà tiên tri, nhà giáo, nhà thơ, triết gia lỗi lạc thời Lê - Mạc. Ông sinh năm 1491 và mất năm 1585. Đền từng được triều Mạc cấp ruộng, ban tiền và đích thân nhà vua viết biển đề tặng. Trải qua thời gian, đền nhiều lần bị tàn phá và trùng tu, song vẫn giữ nguyên vị thế đặc biệt trong lòng người dân địa phương.</p>
+    <div class="images">
+      <figure>
+        <img src="https://vov2.vov.vn/sites/default/files/styles/large/public/2025-01/picture71.jpg" alt="Cảnh đền xưa">
+        <figcaption>Toàn cảnh đền nhìn từ xa</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="section" id="kientruc">
+    <h2>Kiến trúc & Di tích</h2>
+    <p>Ngôi đền chính được xây theo hình chữ Đinh, bao gồm Tiền đường, Hậu cung và các khu phụ trợ. Nội thất bên trong được trang trí bằng các bức hoành phi, câu đối cổ ca ngợi công đức của Trạng Trình. Tượng Nguyễn Bỉnh Khiêm bằng đá granite được đặt tại quảng trường trung tâm. Bên cạnh đền là Am Bạch Vân – nơi ông từng sống và dạy học cho các nho sinh, trong đó có Phùng Khắc Khoan và Nguyễn Dữ.</p>
+    <div class="images">
+      <figure>
+        <img src="https://vov2.vov.vn/sites/default/files/styles/large/public/2025-01/picture23.jpg" alt="Tổng thể kiến trúc đền">
+        <figcaption>Tổng thể kiến trúc nhìn từ trên cao</figcaption>
+      </figure>
+      <figure>
+        <img src="https://static.vinwonders.com/production/den-trang-trinh-3.jpg" alt="Tượng Nguyễn Bỉnh Khiêm">
+        <figcaption>Tượng danh nhân Nguyễn Bỉnh Khiêm tại quảng trường</figcaption>
+      </figure>
+      <figure>
+        <img src="https://static.vinwonders.com/production/den-trang-trinh-4.jpg" alt="Khung cảnh Am Bạch Vân">
+        <figcaption>Am Bạch Vân – nơi dạy học và tu dưỡng đạo lý</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="section" id="lehoi">
+    <h2>Lễ hội & Sự kiện</h2>
+    <p>Lễ hội Đền Trạng Trình được tổ chức từ 27–29/11 âm lịch hằng năm, nhằm tưởng nhớ công lao và lan tỏa tư tưởng nhân nghĩa của Trạng Trình. Các hoạt động bao gồm: rước kiệu, tế lễ, múa rối nước, kéo co, đấu vật, thả diều, đốt pháo đất… Không khí lễ hội sôi động, đậm đà bản sắc dân tộc thu hút hàng vạn du khách mỗi năm.</p>
+    <div class="images">
+      <figure>
+        <img src="https://static.vinwonders.com/production/den-trang-trinh-8.jpg" alt="Lễ hội tại đền">
+        <figcaption>Lễ hội truyền thống diễn ra hàng năm tại khu di tích</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <div>
+        <h3>Thông tin liên hệ</h3>
+        <p>Địa chỉ: Thôn Trung Am, xã Lý Học, huyện Vĩnh Bảo, TP. Hải Phòng</p>
+        <p>Email: <a href="mailto:lienhe@dennbk.vn">lienhe@dennbk.vn</a></p>
+        <p>Điện thoại: 0123 456 789</p>
+      </div>
+      <div>
+        <h3>Bản đồ</h3>
+        <iframe 
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3729.170547457135!2d106.5772159!3d20.6769626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135b9dcf0c70c39%3A0x3e7d4c480a567db!2zRGnhu4duIFRyw6FuZyBUcuG6pW5oIE5ndXnhu4VuIELDrG5oIEtoaeG7h20!5e0!3m2!1svi!2s!4v1680083454783" 
+  width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+      </div>
+      <div>
+        <h3>Liên kết hữu ích</h3>
+        <p><a href="https://vi.wikipedia.org/wiki/Nguy%E1%BB%85n_B%C3%ACnh_Khi%C3%AAm" target="_blank">Wikipedia - Nguyễn Bỉnh Khiêm</a></p>
+        <p><a href="https://haiphong.gov.vn" target="_blank">Cổng thông tin Hải Phòng</a></p>
+        <p><a href="https://vov2.vov.vn" target="_blank">VOV2 - Văn hóa</a></p>
+      </div>
+    </div>
+    <div class="back-to-top">
+      <a href="#top">Quay lại đầu trang ↑</a>
+    </div>
+  
+</body>
+</html>
+
